@@ -27,4 +27,8 @@ public class BeanDefinition {
     public void setBeanClass(Class beanClass) {
         this.beanClass = beanClass;
     }
+
+    public PropertyValues getPropertyValues() {
+        return propertyValues;
+    }
 }
