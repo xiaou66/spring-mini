@@ -39,6 +39,4 @@ public abstract class AbstractBeanDefinitionReader implements BeanDefinitionRead
             loadBeanDefinitions(location);
         }
     }
-
-    protected abstract void loadBeanDefinitions(String location) throws BeansException;
 }
