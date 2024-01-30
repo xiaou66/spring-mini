@@ -1,5 +1,6 @@
 package org.springframework.beans.factory.support;
 
+import org.springframework.beans.factory.BeansException;
 import org.springframework.beans.factory.config.BeanDefinition;
 
 /**
@@ -13,4 +14,13 @@ public interface BeanDefinitionRegistry {
      * @param beanDefinition
      */
     void registerBeanDefinition(String beanName, BeanDefinition beanDefinition);
+
+    /**
+     * 根据名称查找 BeanDefinition
+     * @param beanName
+     * @return
+     * @throws BeansException
+     */
+    BeanDefinition getBeanDefinition(String beanName) throws BeansException;
+
 }
